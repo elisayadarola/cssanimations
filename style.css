@@ -1,0 +1,103 @@
+.container {
+  margin: 20px 0 0 20px;
+  display: flex;
+}
+
+.circle {
+  animation-name: round;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  background: #456789;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+}
+@keyframes round {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellowgreen;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+.square {
+  animation-name: sharp;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  position: relative;
+  background: #456789;
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+}
+@keyframes sharp {
+  0% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: aqua;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: black;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: pink;
+    left: 0px;
+    top: 0px;
+  }
+}
+.triangle {
+  animation: tri 5s ease-out 0s alternate infinite none running;
+  margin: 10px;
+  border-style: solid;
+  border-color: transparent transparent #456789 transparent;
+  border-width: 0 400px 500px 400px;
+  position: relative;
+}
+@keyframes tri {
+  0% {
+    background-color: blueviolet;
+    left: 0px;
+    top: 0%;
+  }
+  25% {
+    background-color: aqua;
+    left: 200px;
+    top: 200pxs;
+  }
+  50% {
+    background-color: yellow;
+    left: 200px;
+    top: 200px;
+  }
+  100% {
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+}
